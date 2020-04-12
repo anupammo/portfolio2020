@@ -15,6 +15,29 @@
 </head>
 
 <body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1600651796916334">
+</div>
     <header class="bg-primary">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark bg-primary">
@@ -159,9 +182,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center text-uppercase text-primary">
-                        <strong>Some of my clients</strong>
-                    </h2>
+                    <h2 class="text-center text-uppercase text-primary mb-5">Some of my clients</h2>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="http://www.gracianna.com" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/gracianna-winery.png"
+                            alt="Gracianna Winery" title="Gracianna Winery">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="https://adiantwelfare.in" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/adiant-welfare.png"
+                            alt="Adiant Welfare" title="Gracianna Winery">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="https://oxyzonetherapy.com/" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/ozonepedia.png"
+                            alt="Ozonepedia" title="Ozonepedia">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="https://webomates.com" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/webomates.png"
+                            alt="WebomateS" title="WebomateS">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="https://ritehorn.in" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/ritehorn.png"
+                            alt="Ritehorn" title="Ritehorn">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="http://www.radiobillboards.com" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/radiobillboards.png"
+                            alt="Radio Billboards" title="Radio Billboards">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="http://www.1300thevet.com.au" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/thevet.png"
+                            alt="1300-the-vet" title="1300 the vet">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <a href="" class="img-client">
+                        <img class="img-fluid" src="https://anupammondal.in/cntnt/img/clinents/india-arrival.png"
+                            alt="India Arrival" title="india arrival">
+                    </a>
                 </div>
             </div>
         </div>
@@ -169,14 +238,11 @@
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h2 class="text-center text-uppercase text-primary mb-5">
-                        <strong>Client says about me</strong>
-                    </h2>
+                <div class="col-md-6 col-12">
+                    <img class="img-fluid" alt=""
+                        src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
+                <div class="col-md-6 col-12">
                     <div id="portfolio-slide" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -184,8 +250,8 @@
                                     <p class="mb-0">Very good communication despite time difference between
                                         California and India. We will use Anupam again. Very
                                         generous and wonderful person. He is talented in web design.</p>
-                                    <footer class="blockquote-footer">Trini Amador <cite
-                                            title="Source Title">BHC Consulting, San Francisco</cite></footer>
+                                    <footer class="blockquote-footer">Trini Amador <cite title="Source Title">BHC
+                                            Consulting, San Francisco</cite></footer>
                                 </blockquote>
                             </div>
                             <div class="carousel-item">
@@ -193,8 +259,8 @@
                                     <p class="mb-0">Great to work with this freelancer, very patient and dedicated
                                         to achieve the clients vision, My first choice
                                         for this type of work. AAA+++ 5 Stars.</p>
-                                    <footer class="blockquote-footer">1300 The VET <cite
-                                            title="Source Title">Dural, Australia</cite></footer>
+                                    <footer class="blockquote-footer">1300 The VET <cite title="Source Title">Dural,
+                                            Australia</cite></footer>
                                 </blockquote>
                             </div>
                             <div class="carousel-item">
@@ -202,8 +268,8 @@
                                     <p class="mb-0">We requested some tasks for the mobile version our page. He his
                                         most time available to coordinate and
                                         fix the issues or bugs you detect during the development.</p>
-                                    <footer class="blockquote-footer">Igwilo Oscar <cite
-                                            title="Source Title">Lima, Peru</cite></footer>
+                                    <footer class="blockquote-footer">Igwilo Oscar <cite title="Source Title">Lima,
+                                            Peru</cite></footer>
                                 </blockquote>
                             </div>
                             <div class="carousel-item">
@@ -219,8 +285,8 @@
                                     <p class="mb-0">Quality of work was right up there after revision, communication
                                         was good, expertise got the job
                                         done, I would use their services again.</p>
-                                    <footer class="blockquote-footer">Bruce Code <cite
-                                            title="Source Title">West Wodonga, Australia</cite></footer>
+                                    <footer class="blockquote-footer">Bruce Code <cite title="Source Title">West
+                                            Wodonga, Australia</cite></footer>
                                 </blockquote>
                             </div>
                             <div class="carousel-item">
@@ -236,8 +302,8 @@
                                     <p class="mb-0">Mr. Anupam Mondal is a good nature and a one Quality person. He
                                         is very friendly to communication. He is a
                                         very experience programmer.</p>
-                                    <footer class="blockquote-footer">Vicky Srivastav <cite
-                                            title="Source Title">Delhi, India</cite></footer>
+                                    <footer class="blockquote-footer">Vicky Srivastav <cite title="Source Title">Delhi,
+                                            India</cite></footer>
                                 </blockquote>
                             </div>
                             <div class="carousel-item">
@@ -261,8 +327,8 @@
                                     <p class="mb-0">Very pleased with the service. One thing I think is important is
                                         that it can communicate quickly and
                                         efficiently. Thumbs up for his work</p>
-                                    <footer class="blockquote-footer">Chris Forgione<cite
-                                            title="Source Title">Medford, United States</cite></footer>
+                                    <footer class="blockquote-footer">Chris Forgione<cite title="Source Title">Medford,
+                                            United States</cite></footer>
                                 </blockquote>
                             </div>
                         </div>
@@ -275,16 +341,60 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center text-uppercase text-primary">
+                    <h2 class="text-center text-uppercase text-primary py-5">
                         <strong>How may I help you</strong>
                     </h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md- 6 col-12">
-                    <h2 class="text-center text-uppercase text-primary">
-                        <strong>How may I help you</strong>
-                    </h2>
+                <div class="col-md-6 col-12">
+                    <h4 class="text-center text-uppercase text-primary">
+                        <strong>Leave a message</strong>
+                    </h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="mailid">Full name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="mailid">Email address</label>
+                            <input type="email" class="form-control">
+                            <!-- <small id="mailid" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="telno">Mobile number</label>
+                            <input type="tel" class="form-control" id="telno">
+                        </div>
+                        <div class="form-group">
+                            <label for="urmsg">Your message</label>
+                            <textarea class="form-control" id="urmsg"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 col-12">
+                    <h4 class="text-center text-uppercase text-primary">
+                        <strong>Leave a message</strong>
+                    </h4>
+                    <a class="card-link my-2" title="WhatsApp +919474460058" href="https://api.whatsapp.com/send?phone=919474460058&amp;text=Do%20you%20need%20assistance%20about%20web%20development%3F%20you%20can%20use%20this%20number%20as%20%20contact%20reference%20or%20you%20can%20visit%20https%3A%2F%2Fanupammondal.in%20for%20more%20details.">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="text-center">
+                                    WhatsApp +91 947-446-0058
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link my-2" title="WhatsApp +919474460058" href="m.me/anupammondal.in">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="text-center">
+                                    facebook Messenger
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
