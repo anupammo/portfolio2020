@@ -1,3 +1,10 @@
+#bg-gradient-primary {
+    background: rgb(0,123,255);
+    background: -moz-linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 35%, rgba(255,255,255,1) 60%);
+    background: -webkit-linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 35%, rgba(255,255,255,1) 60%);
+    background: linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 35%, rgba(255,255,255,1) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007bff",endColorstr="#ffffff",GradientType=1);
+}
 figure img {
     background-color: #272727;
     padding: 35px 1px 1px 1px;
@@ -39,6 +46,28 @@ figcaption span:nth-child(3) {
     background-image: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     background-size: cover;
     background-position: center;
+}
+.card-square {
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;  
+}
+.card-square .card-header {
+    border: none;
+}
+.card-square:hover {
+    background-image: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+}
+.card-square:hover .card-square:hover .card-header, .card-square:hover .card-header {
+    background-color: #000000aa !important;
+    border-radius: 0;
+}
+.card-square:hover h5, .card-square:hover p, .card-square:hover a {
+    color: #ffffff !important;
+}
+.card-square:hover .card-body {
+    background-color: #000000aa !important;
 }
 .card-body p {
     min-height: 140px;
