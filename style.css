@@ -1,8 +1,8 @@
 #bg-gradient-primary {
     background: rgb(0,123,255);
-    background: -moz-linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 35%, rgba(255,255,255,1) 60%);
-    background: -webkit-linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 35%, rgba(255,255,255,1) 60%);
-    background: linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 35%, rgba(255,255,255,1) 60%);
+    background: -moz-linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 30%, rgba(255,255,255,1) 75%);
+    background: -webkit-linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 30%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(177deg, rgba(0,123,255,1) 0%, rgba(0,123,255,1) 30%, rgba(255,255,255,1) 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007bff",endColorstr="#ffffff",GradientType=1);
 }
 figure img {
@@ -47,13 +47,10 @@ figcaption span:nth-child(3) {
     background-size: cover;
     background-position: center;
 }
-.card-square {
-    cursor: pointer;
+.card-square, .card-square .card-header{
+    cursor: grab;
     border: none;
-    border-radius: 0px;  
-}
-.card-square .card-header {
-    border: none;
+    border-radius: 0px; 
 }
 .card-square:hover {
     background-image: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
