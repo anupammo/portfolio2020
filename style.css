@@ -42,8 +42,13 @@ figcaption span:nth-child(3) {
     height: 12px;
     border-radius: 50%;
 }
-#left-blk-bg {
+/* #left-blk-bg {
     background-image: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    background-position: center;
+} */
+#left-blk-bg {
+    background-image: url('https://images.pexels.com/photos/4155260/pexels-photo-4155260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: center;
 }
@@ -51,6 +56,15 @@ figcaption span:nth-child(3) {
     cursor: grab;
     border: none;
     border-radius: 0px; 
+}
+.card-square-nobg, .card-square-nobg .card-header, .card-square-nobg .card-footer{
+    cursor: progress;
+    border: none;
+    background: none;
+    border-radius: 0px; 
+}
+.card-square-nobg img {
+    height: 100px;
 }
 .card-square:hover {
     background-image: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
