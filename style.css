@@ -76,9 +76,9 @@ figcaption span:nth-child(3) {
     background-color: #000000aa !important;
     border-radius: 0;
 }
-.card-square:hover h5, .card-square:hover p, .card-square:hover a {
+/* .card-square:hover h5, .card-square:hover p, .card-square:hover a {
     color: #ffffff !important;
-}
+} */
 .card-square:hover .card-body {
     background-color: #000000aa !important;
 }
