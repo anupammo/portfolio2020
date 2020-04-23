@@ -75,12 +75,11 @@ figcaption span:nth-child(3) {
 .card-square:hover .card-square:hover .card-header, .card-square:hover .card-header {
     background-color: #000000aa !important;
     border-radius: 0;
+    color: #fff;
 }
-/* .card-square:hover h5, .card-square:hover p, .card-square:hover a {
-    color: #ffffff !important;
-} */
 .card-square:hover .card-body {
     background-color: #000000aa !important;
+    color: #fff;
 }
 .card-square-nobg  p {
     height: 120px;
