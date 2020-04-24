@@ -12,6 +12,9 @@
     background: linear-gradient(180deg, rgba(0,123,255,1) 5%, rgba(255,255,255,0.4990371148459384) 15%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007bff",endColorstr="#ffffff",GradientType=1);
 }
+.bg-overlay {
+    background-color: #00000080;
+}
 figure img {
     background-color: #272727;
     padding: 35px 1px 1px 1px;
